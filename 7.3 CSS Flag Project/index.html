@@ -9,40 +9,41 @@
     
     /* Red Rectangle */
     .flag {
-      background-color: #ce1126;
       width: 900px;
       height: 600px;
+      background-color: #ce1126;
       position: relative;
     }
+
     /* Blue Rectangle */
     .flag > div {
-      background-color: #002868;
       width: 100%;
       height: 300px;
+      background-color: #002868;
       top: 150px;
       position: absolute;
     }
-    /* Top Text */
-    .flag > p {
-      width: 100%;
-      color: white;
-    }
-    p {
-      margin: 0;
-      font-size: 5rem;
-      text-align: center;
-    }
-    /* Middle Text inside White Circle */
-     .flag > div > div {
-      background-color: white;
+
+    /* White Circle */
+    .flag > div > div {
       width: 200px;
       height: 200px;
-      margin-top: 50px;
-      margin-left: 350px;
       border-radius: 50%;
-      text-align: center;
+      background-color: white;
+      left: 350px;
+      top: 50px;
+      position: absolute;
+    }
+
+    p {
       font-size: 5rem;
-      position: relative;
+      text-align: center;
+      color: white;
+      margin: 0;
+    }
+    
+    .flag > div > div > p {
+      color: black;
     }
 
 
