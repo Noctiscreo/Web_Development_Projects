@@ -14,12 +14,15 @@
       display: flex;
       gap: 2rem;
       justify-content: center;
+      /* You need a height to be able to align-items. */
       height: 100vh;
       align-items: center;
     }
     .pricing-plan {
       background-color:#f2f2f2;
+      /* flex: 1; sets the ratio and enables shrinking and growing. */
       flex: 1;
+      /* Putting on a max width caps the width of a card. */
       max-width: 400px;
       text-align: center;
       border-radius: 5px;
@@ -36,7 +39,7 @@
       margin-bottom: 10px;
     }
     .plan-features {
-      list-style-type: none;
+      list-style: none;
       margin: 0;
       padding: 0;
     }
@@ -56,6 +59,7 @@
     @media (max-width: 1250px) {
       .pricing-container {
       flex-direction: column;
+      /* Setting the height is necessary otherwise not all the cards will be visible. */
       height: 100%;
     }
     }
